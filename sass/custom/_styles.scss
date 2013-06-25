@@ -1,2 +1,11 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+// # In /sass/base/
+// _theme.scss      # All colors are defined here
+
+// # In /sass/custom/ - Change these files for easy customization
+// _colors.scss     # Override colors in base/_theme.scss to change color
+// schemes
+// _fonts.scss     # Override fonts
+// _styles.scss     # Easly Override any style (last in the cascade)
