@@ -39,4 +39,12 @@
   <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
+<!-- https://github.com/getpelican/pelican-plugins/blob/master/latex/Readme.md-->
+{% if article and article.latex %}
+    {{ article.latex }}
+{% endif %}
+{% if page and page.latex %}
+    {{ page.latex }}
+{% endif %}
+
 </head>
