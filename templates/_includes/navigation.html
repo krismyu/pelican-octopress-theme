@@ -5,6 +5,17 @@
   {% endif %}
 </ul>
 
+<!-- added from https://github.com/jakevdp/pelican-octopress-theme/commit/c093039290820db69c442aa43b680f69c4aed52e-->
+
+{% if SEARCH_BOX %}
+<form action="{{ SITESEARCH|default('http://google.com/search') }}" method="get">
+   <fieldset role="search">
+     <input type="hidden" name="q" value="site:{{ SITEURL|replace('http://','') }}" />
+     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+   </fieldset>
+ </form>
+{% endif %}
+
 <!-- TODO: add search here
 <form action="{{ SITESEARCH }}" method="get">
   <fieldset role="search">
