@@ -60,3 +60,30 @@ $footer-link-color: darken($footer-bg, 38) !default;
 $footer-link-color-hover: darken($footer-color, 25) !default;
 $page-border-bottom: darken($footer-bg, 5) !default;
 
+// Two column layout for about page 
+// based on http://www.w3schools.com/cssref/tryit.asp?filename=trycss_float6
+
+div.container
+{
+width:100%;
+margin:0px;
+padding: 10px;
+border: solid 1px #EFEFEF;
+line-height:150%;
+}
+
+div.left
+{
+float:left;
+width:270px;
+margin:0;
+padding:1em;
+}
+div.right
+{
+margin-left:300px;
+//border-left:1px solid gray;
+padding:1em;
+}
+
+
